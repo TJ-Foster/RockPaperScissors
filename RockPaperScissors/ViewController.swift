@@ -40,11 +40,13 @@ class ViewController: UIViewController {
                 player1Image.image = UIImage(named: p1Image)
             }
             
+            p1LockedIn.text = "Locked In"
+            
             if  p1Chosen && p2Chosen == true {
                 playAgainButton.backgroundColor = UIColor.yellow
                 playAgainButton.setTitle("Play Again",for: .normal)
                 
-                p1LockedIn.text = "Locked In"
+                
                 
                 if  player1Image.image  == UIImage(named: "rock") && player2Image.image  == UIImage(named: "scissors") || player1Image.image  == UIImage(named: "scissors") && player2Image.image  == UIImage(named: "paper") || player1Image.image  == UIImage(named: "paper") && player2Image.image  == UIImage(named: "rock")
                     {
@@ -76,6 +78,8 @@ class ViewController: UIViewController {
             if let p2Image = randChoice{
                 player2Image.image = UIImage(named: p2Image)
             }
+            
+            p2LockedIn.text = "Locked In"
             
             if  p1Chosen && p2Chosen == true {
                 playAgainButton.backgroundColor = UIColor.yellow
